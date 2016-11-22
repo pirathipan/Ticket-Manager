@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+            Ticket
+        {% endblock title %}
+    </title>
+    {% block css %}
+    {% endblock css %}
+</head>
+<body>
+
+<header>
+    Ticket Manager
+    <ul>
+        <li> <a href="{{ path('page1') }}" >Page 1</a></li>
+        <li> <a href="{{ path('page2') }}" >Page 2</a></li>
+        <li> <a href="{{ path('page3') }}" >Page 3</a></li>
+    </ul>
+</header>
+
+<div id="container">
+
+    <ul>
+        <li> <a href="{{ path('home') }}">Home</a> </li>
+
+    </ul>
+
+    {% block content %}
+    {% endblock content %}
+
+    {% block body %}
+    {% endblock body %}
+
+</div>
+
+
+{% block js %} {% endblock js %}
+
+</body>
+</html>
